@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        <title>1.000 Seguidores</title>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Chegamos a 1.000 seguidores!</h1>
+        <div id="content">
+            <div class="card">
+                <img src="boku_no_.gif">
+                <button>Muito obrigado!</button>
+            </div>
+        </div>
+        <script>
+            const jsConfetti = new JSConfetti()
+            function confetinhos() {
+                jsConfetti.addConfetti({
+                    emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸']
+                    ,emojiSize: 50,
+                })
+            }
+            document.querySelector(".card button").addEventListener("click", confetinhos);
+        </script>
+    </body>
+</html>
